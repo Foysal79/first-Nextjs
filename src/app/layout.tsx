@@ -32,6 +32,7 @@ export default function RootLayout({
       >
         
         <main className="min-h-dvh">{children}</main>
+        {/* Footer session */}
         <footer className="text-center text-3xl my-5">
           <p>This is my footer page</p>
         </footer>
