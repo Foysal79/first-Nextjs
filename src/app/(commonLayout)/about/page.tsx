@@ -1,9 +1,9 @@
 import React from "react";
-
+import style from "./About.module.css"
 const AboutPage = () => {
   return (
     <div>
-      <h1 className="text-3xl">About Page</h1>
+      <h1 className={style.text_style}>About Page</h1>
     </div>
   );
 };

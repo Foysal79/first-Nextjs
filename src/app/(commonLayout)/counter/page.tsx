@@ -1,11 +1,11 @@
-import Counter from "@/components/Counter";
+import Counter from "@/component/Counter";
 
 const CounterPage = () => {
-    return (
-        <div>
-            <Counter />
-        </div>
-    );
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
 };
 
 export default CounterPage;

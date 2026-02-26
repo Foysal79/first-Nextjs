@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Noise Cancelling Headphones",
+      "category": "Electronics",
+      "price": 199.99,
+      "stock": 45,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1518444028785-8b3f6e1d3c6e"
+    },
+    {
+      "id": 2,
+      "name": "Smart Fitness Watch",
+      "category": "Electronics",
+      "price": 149.99,
+      "stock": 60,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b"
+    },
+    {
+      "id": 3,
+      "name": "Men's Casual Sneakers",
+      "category": "Fashion",
+      "price": 79.99,
+      "stock": 120,
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1528701800489-20be3c1f0a3f"
+    },
+    {
+      "id": 4,
+      "name": "Women's Leather Handbag",
+      "category": "Fashion",
+      "price": 129.99,
+      "stock": 35,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3"
+    },
+    {
+      "id": 5,
+      "name": "4K Ultra HD Smart TV",
+      "category": "Electronics",
+      "price": 799.99,
+      "stock": 15,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6"
+    },
+    {
+      "id": 6,
+      "name": "Portable Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 59.99,
+      "stock": 75,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1585386959984-a41552262b8f"
+    },
+    {
+      "id": 7,
+      "name": "Gaming Mechanical Keyboard",
+      "category": "Electronics",
+      "price": 99.99,
+      "stock": 50,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+    },
+    {
+      "id": 8,
+      "name": "Ergonomic Office Chair",
+      "category": "Furniture",
+      "price": 249.99,
+      "stock": 20,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1582582494700-1b8e8c1d8d4a"
+    },
+    {
+      "id": 9,
+      "name": "Stainless Steel Water Bottle",
+      "category": "Lifestyle",
+      "price": 24.99,
+      "stock": 200,
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1526403228-6a1a6c9f7b57"
+    },
+    {
+      "id": 10,
+      "name": "Professional DSLR Camera",
+      "category": "Electronics",
+      "price": 1199.99,
+      "stock": 10,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1519183071298-a2962be96e65"
+    },
+    {
+      "id": 11,
+      "name": "Ceramic Coffee Mug Set",
+      "category": "Home & Kitchen",
+      "price": 39.99,
+      "stock": 80,
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348"
+    },
+    {
+      "id": 12,
+      "name": "Wooden Study Desk",
+      "category": "Furniture",
+      "price": 299.99,
+      "stock": 18,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1588854337116-0a0b5d8f5cb9"
+    },
+    {
+      "id": 13,
+      "name": "Men's Classic Wrist Watch",
+      "category": "Fashion",
+      "price": 159.99,
+      "stock": 40,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1519744346361-7b7a9a6e3e8c"
+    },
+    {
+      "id": 14,
+      "name": "Electric Air Fryer",
+      "category": "Home Appliances",
+      "price": 129.99,
+      "stock": 55,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1604908177522-4327f16b7b92"
+    },
+    {
+      "id": 15,
+      "name": "Yoga Mat Non-Slip",
+      "category": "Fitness",
+      "price": 29.99,
+      "stock": 150,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1599058917212-d750089bc07e"
+    },
+    {
+      "id": 16,
+      "name": "Laptop Backpack with USB Port",
+      "category": "Accessories",
+      "price": 69.99,
+      "stock": 90,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1506765515384-028b60a970df"
+    }
+  ]
+}
