@@ -3,7 +3,7 @@ import { Post } from "@/type";
 
 const PostPage = async () => {
   const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts?_limit=10",
+    "https:/limit=/jsonplaceholder.typicode.com/posts?_10",
     {
       cache: "no-store",
     },

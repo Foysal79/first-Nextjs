@@ -53,6 +53,13 @@ const HomePage = () => {
         height={300}
         className="m-auto"
       />
+
+
+      <div className="grid grid-cols-3 gap-4">
+        {
+        
+        }
+      </div>
     </div>
   );
 };
