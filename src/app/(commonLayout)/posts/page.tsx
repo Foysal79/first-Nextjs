@@ -1,14 +1,10 @@
 import PostCard from "@/component/postCard";
+import { service } from "@/service/postService";
 import { Post } from "@/type";
 
 const PostPage = async () => {
-  const res = await fetch(
-    "https:/limit=/jsonplaceholder.typicode.com/posts?_10",
-    {
-      cache: "no-store",
-    },
-  );
-  const posts = await res.json();
+  // api management use service components
+  const posts = await service.getBlogPost();
   console.log(posts);
   return (
     <div>
