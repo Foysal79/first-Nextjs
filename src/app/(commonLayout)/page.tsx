@@ -2,12 +2,29 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import ProfileImage from "@/assets/1.png";
+import ProductsCard from "@/component/ProductsCard";
+import { service } from "@/service/postService";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
   const router = useRouter();
   const handleNavigation = () => {
     router.push("dashboard");
   };
+
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const featchProduct = async () => {
+      try {
+        const data = await service.getProductDetails();
+        setProduct(data);
+      } catch (error) {
+        console.error("Failed to fetch Product", error);
+      }
+    };
+    featchProduct();
+  }, []);
 
   return (
     <div>
@@ -20,6 +37,15 @@ const HomePage = () => {
       >
         Dashboard
       </button>
+
+      <h1 className="text-3xl font-semibold text-center mt-4">
+        Feature Product
+      </h1>
+      <div className="grid grid-cols-4 gap-4 max-w-5/6 mx-auto">
+        {product?.slice(0, 4).map((product: any) => (
+          <ProductsCard key={product.id} product={product} />
+        ))}
+      </div>
 
       <h1 className="text-center m-5 font-semibold text-blue-700">
         Local img use (public folder use)
@@ -54,12 +80,7 @@ const HomePage = () => {
         className="m-auto"
       />
 
-
-      <div className="grid grid-cols-3 gap-4">
-        {
-        
-        }
-      </div>
+      <div className="grid grid-cols-3 gap-4">{}</div>
     </div>
   );
 };

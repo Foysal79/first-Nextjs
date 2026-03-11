@@ -1,12 +1,9 @@
 import ProductsCard from "@/component/ProductsCard";
+import { service } from "@/service/postService";
 import { IProduct } from "@/type";
 
 const Products = async () => {
-  const res = await fetch("http://localhost:5000/products", {
-    cache: "no-store",
-  });
-  
-  const products = await res.json();
+  const products = await service.getProductDetails();
   console.log(products);
   return (
     <div>

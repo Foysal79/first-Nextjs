@@ -9,7 +9,15 @@
   return await res.json();
 };
 
+const getProductDetails = async () => {
+const res = await fetch("http://localhost:5000/products", {
+cache : "no-store",
+})
+
+return await res.json();
+}
+
 export const service = {
 getBlogPost,
-
+getProductDetails
 }

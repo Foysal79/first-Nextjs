@@ -13,6 +13,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import type { IProduct } from "@/type";
+import Link from "next/link";
 
 const ProductsCard = ({ product }: { product: IProduct }) => {
   const isLowStock = product.stock <= 20;
@@ -66,9 +67,11 @@ const ProductsCard = ({ product }: { product: IProduct }) => {
       </CardContent>
 
       {/* Footer */}
-      <CardFooter className="pt-0">
-        <Button className="w-full">View Product</Button>
-      </CardFooter>
+      <Link href={`/products/${product.id}`}>
+        <CardFooter className="pt-0">
+          <Button className="w-full">View Product</Button>
+        </CardFooter>
+      </Link>
     </Card>
   );
 };
