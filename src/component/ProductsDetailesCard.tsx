@@ -9,14 +9,7 @@ import Image from "next/image";
 import React from "react";
 
 
-    export const generateStaticParams = async () => {
-  const res = await fetch("http://localhost:5000/products");
-  const products = await res.json();
 
-  return products.map((product: any) => ({
-    productId: String(product.id),
-  }));
-};
 
 const ProductsDetailsCard = ({ product }: { product: IProduct }) => {
 
