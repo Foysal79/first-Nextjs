@@ -13,11 +13,17 @@ const getProductDetails = async () => {
 const res = await fetch("http://localhost:5000/products", {
 cache : "no-store",
 })
-
 return await res.json();
+}
+
+
+const product = async () => {
+
+
 }
 
 export const service = {
 getBlogPost,
-getProductDetails
+getProductDetails,
+product
 }

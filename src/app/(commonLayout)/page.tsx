@@ -1,29 +1,33 @@
 "use client";
+
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import ProfileImage from "@/assets/1.png";
 import ProductsCard from "@/component/ProductsCard";
 import { service } from "@/service/postService";
 import { useEffect, useState } from "react";
+import { IProduct } from "@/type";
 
 const HomePage = () => {
   const router = useRouter();
+
   const handleNavigation = () => {
-    router.push("dashboard");
+    router.push("/dashboard");
   };
 
-  const [product, setProduct] = useState(null);
+  const [products, setProducts] = useState<IProduct[]>([]);
 
   useEffect(() => {
-    const featchProduct = async () => {
+    const fetchProducts = async () => {
       try {
         const data = await service.getProductDetails();
-        setProduct(data);
+        setProducts(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error("Failed to fetch Product", error);
       }
     };
-    featchProduct();
+
+    fetchProducts();
   }, []);
 
   return (
@@ -31,6 +35,7 @@ const HomePage = () => {
       <h1 className="text-6xl font-semibold text-center my-10">
         Hello Next js Page
       </h1>
+
       <button
         className="border rounded-3xl p-3 flex m-auto mt-10"
         onClick={handleNavigation}
@@ -41,8 +46,9 @@ const HomePage = () => {
       <h1 className="text-3xl font-semibold text-center mt-4">
         Feature Product
       </h1>
+
       <div className="grid grid-cols-4 gap-4 max-w-5/6 mx-auto">
-        {product?.slice(0, 4).map((product: any) => (
+        {products.slice(0, 4).map((product) => (
           <ProductsCard key={product.id} product={product} />
         ))}
       </div>
@@ -79,8 +85,6 @@ const HomePage = () => {
         height={300}
         className="m-auto"
       />
-
-      <div className="grid grid-cols-3 gap-4">{}</div>
     </div>
   );
 };

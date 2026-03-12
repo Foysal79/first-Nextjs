@@ -1,6 +1,12 @@
 import ProductsCard from "@/component/ProductsCard";
 import { service } from "@/service/postService";
 import { IProduct } from "@/type";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "My products",
+  description: "this my all over product page",
+};
 
 const Products = async () => {
   const products = await service.getProductDetails();
